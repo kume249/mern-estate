@@ -4,9 +4,14 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import About from "./pages/About";
 import Profile from "./pages/Profile";
+import Header from "./componets/Header";
 export default function App() {
+  // https://www.youtube.com/watch?v=VAaUy_Moivw&t=1696s
+  // https://github.com/kume249/mern-estate
+  // from 28:13 - Create Header component
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/sign-in" element={<SignIn />}></Route>
